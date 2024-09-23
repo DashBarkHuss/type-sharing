@@ -65,3 +65,11 @@ The `frontend` directory contains the client-side application built with React.
 - **Frontend**: Use `npm start` for development (CRA handles TypeScript), and compile with `npm run build` for production.
 
 This workflow allows for efficient development and deployment of TypeScript applications across different parts of the project.
+
+# Root Directory Commands
+
+- `npm run build:shared`: Build the shared library.
+- `npm run dev:backend`: Run the backend in development mode.
+- `npm run dev:frontend`: Run the frontend in development mode.
+- `npm run dev:all`: Run the backend and frontend in development mode.
+- `npm run dev:all-build-shared`: Build the shared library and run the backend and frontend in development mode.
