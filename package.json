@@ -11,7 +11,9 @@
     "kill-port": "kill-port 5000",
     "dev:backend": "npm run dev --workspace=backend",
     "dev:frontend": "npm run start --workspace=frontend",
-    "dev:all": "npm run kill-port && concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+    "build:shared": "npm run build --workspace=shared", 
+    "dev:all": "npm run kill-port && concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "devBuild:all": "npm run build:shared && npm run kill-port && concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
   },
   "dependencies": {
     "express": "^4.21.0"
