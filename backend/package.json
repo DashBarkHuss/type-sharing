@@ -2,7 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@myproject/shared": "1.0.0",
