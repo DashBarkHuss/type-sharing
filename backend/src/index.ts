@@ -12,7 +12,6 @@ app.listen(PORT, () => {
 });
 
 app.get('/users', (req, res) => {
-    console.log('GET /users');
     const users: User[] = [
         {
             id: 1,
