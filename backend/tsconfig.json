@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    // ... other options
+    "baseUrl": ".",
+    "paths": {
+      "@myproject/shared": ["../shared/dist"]
+    },
+    "esModuleInterop": true
+  }
+}

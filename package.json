@@ -1,0 +1,23 @@
+{
+  "name": "typescript-shared-types-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "kill-port": "kill-port 5000",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run start --workspace=frontend",
+    "dev:all": "npm run kill-port && concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "kill-port": "^2.0.1"
+  }
+}
